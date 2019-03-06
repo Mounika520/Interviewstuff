@@ -1,5 +1,0 @@
-1 . Math.sing(400) return 1 
-    Math.sing(-400) return -1
-
-    number.toString()
-    parseInt('string')
