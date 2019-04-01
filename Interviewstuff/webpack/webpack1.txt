@@ -1,0 +1,44 @@
+npm install webpack --save-dev
+
+Register in packageJSON under
+
+"scripts":{
+"build": "webpack src/js/app.js  dist/bundle.js"
+"build:prod": "webpack src/js/app.js dist/bundle.js -p" 
+}
+
+
+num run build || npm run build:prod 
+
+
+Webpack dev server 
+====================
+
+npm install webpack-dev-server
+"scripts":{
+"build": "webpack-dev-server  --entry ./src/js/app.js --ouput-filename  ./dist/bundle.js"
+"build:prod": "webpack src/js/app.js dist/bundle.js -p" 
+}
+
+npm run build 
+
+
+when mutiple entry's 
+====================
+Create new file and write script //webpack.config.js
+var path = require('path')
+module.exports ={
+	entry : ./src/js/app.js
+	output : {
+	   path : path.reslove(__dirname, 'dist'),
+	   filename:'bundle.js',
+	   publicPath:'/dist'
+	}
+}
+
+
+
+
+ref : https://www.youtube.com/watch?v=8DDVr6wjJzQ
+
+

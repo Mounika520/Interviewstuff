@@ -1,4 +1,4 @@
-/*var obj =  { 
+var obj =  { 
  
     count : 1
  }
@@ -41,4 +41,3 @@ function output(){
 console.log("outside function",output())
 console.log("End",obj)
 
-*/
