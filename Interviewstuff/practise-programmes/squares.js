@@ -8,3 +8,28 @@ function squares(){
 function squares(){
 	return a.map(Math.sqrt)
 }
+
+
+
+var a = function (id) {
+	return  window.alert(id+1)
+}
+
+var add = a(1)
+console.log(add)
+
+$ = {
+	"name" : "viswa",
+	getname: function(string){
+		return this.name+string+" Reddy"
+	}
+}
+$.getname($.jQuery.get("http://www.google.com"))
+
+
+var a = {
+
+}
+
+$.get("http://www.google.com")
+

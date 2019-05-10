@@ -1,0 +1,43 @@
+<script >
+	
+ function add(par1){
+ 	return function addmetoo(par2){
+           return par1+par2
+ 	}
+ }
+ console.log(add(10)(20))
+
+
+
+
+function time(distance, speed){
+  return distance/speed
+}
+console.log(time(400,50))
+console.log(time(400,30))
+console.log(time(400,10))
+
+
+
+// if distance is common then better willl do as follows
+
+
+function time(distance){
+  return function(speed){
+      return distance/speed;
+  }
+}
+
+var caltimeforspeed = time(400)
+console.log(caltimeforspeed(50))
+
+
+
+
+
+
+
+
+
+
+</script>
