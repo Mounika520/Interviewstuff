@@ -39,7 +39,17 @@ true  == 'true'  // false
 true  === 'true'  // false 
 
 
-Difference btween null vs undefiend vs not-defined
+Difference btween null vs undefiend vs not-defined   null == undefined
 
 
 Hosting : Varaibles can be accessed before delcartion . Hosting applicable to both Varaibles and function 
+
+
+
+var a = 5 ;
+
+function increment(b){
+	a+b
+}
+increment(a)
+console.log(a)

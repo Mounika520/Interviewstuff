@@ -6,7 +6,7 @@ function forof(){
 var animals = ['dog','cat','puppy','peackoak']
 
 for (let ani of animals){
-	console.log(`Printing the animals with index's ${ani} --> ${animals[ani]}`);
+	 ani = ani+"2"
 }
 }
 
@@ -35,4 +35,38 @@ var fruits = {
 
 for (let fruit in fruits){
 	console.log(`Printing fruits and cost ${fruit}  ==>  ${fruits[fruit]} `)
+}
+
+
+
+
+for of to iteriate through it not to update the values 
+
+var fruits = {
+
+	'apple':100,
+	'Mango':50,
+	'Banana':10,
+	'custered':250,
+	'dozen':'Twlele'
+}
+
+for (let fruit in fruits){
+	console.log(`Printing fruits and cost ${fruit}  ==>  ${fruits[fruit]} `)
+    fruits[fruit] = '55'
+	console.log(`Printing fruits and cost ${fruit}  ==>  ${fruits[fruit]} `)
+}
+
+
+
+
+
+function forof(){
+var animals = ['dog','cat','puppy','peackoak']
+
+for (let ani of animals){
+	console.log(`Printing the animals with index's ${ani} --> ${animals[ani]}`);
+
+	//  animals[ani] = 'mat'
+	// console.log(`Printing the animals with index's ${ani} --> ${animals[ani]}`);
 }

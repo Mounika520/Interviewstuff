@@ -11,9 +11,9 @@ obj.getvalue()
 
 
 // question
-
+var a = 10
 var obj = {
-   a:5,
+   'a':5,
    getvalue : function(){
    	  console.log(this.a)     //a = 5 
    }

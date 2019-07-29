@@ -1,0 +1,8 @@
+// Topic : Objects
+
+1.  How many ways you can loop through objects 
+
+A .  var  a = {
+	            
+	            
+              }
